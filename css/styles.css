@@ -8,6 +8,7 @@
   --footer-mail-phone-color: rgba(255, 255, 255, 0.6);
   --footer-bg-color: rgba(47, 48, 58, 1);
   --bg-our-team: rgba(245, 244, 250, 1);
+  --icon-color: rgba(175, 177, 184, 1);
 }
 html {
   box-sizing: border-box;
@@ -64,6 +65,7 @@ a {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+
 .list {
   list-style: none;
 }
@@ -104,6 +106,7 @@ a {
 }
 .main-nav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -144,7 +147,10 @@ a {
 
 /* mail & phone */
 .reg-contact {
+  margin-top: auto;
+  margin-bottom: auto;
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .link-contact {
@@ -281,6 +287,15 @@ a {
 }
 
 /* Переваги */
+.pack {
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: var(--bg-our-team);
+  width: 100%;
+  height: 120px;
+}
 
 .section.list .item:not(:last-child) {
   margin-right: 30px;
@@ -294,6 +309,7 @@ a {
 }
 
 .section-benefits {
+  margin-top: 30px;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -318,7 +334,9 @@ a {
 .front:not(:last-child) {
   margin-right: 30px;
 }
+
 /* Команда */
+
 .list-block {
   display: flex;
 }
@@ -339,6 +357,7 @@ a {
   padding-bottom: 94px;
   background-color: var(--bg-our-team);
 }
+
 .worker {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -359,6 +378,34 @@ a {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
+}
+
+/* Посилання на соц. */
+.social-links {
+  display: flex;
+  width: 100%;
+  margin-top: 16px;
+  justify-content: space-between;
+  width: 206px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--icon-color);
+  background-color: var(--primary-bg-color);
+}
+.about-circle:focus,
+.about-circle:hover {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  fill: var(--primary-bg-color);
 }
 
 /* Проекти */
